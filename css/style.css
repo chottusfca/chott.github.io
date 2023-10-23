@@ -58,8 +58,17 @@ nav {
 }
 
 main {
-
+    margin: 10rem auto; 
 }
+
+section {
+    margin: 9.25rem auto; 
+    display: grid; 
+    grid-template-columns: repeat (12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
 
 footer {
     width: 35rem; 
@@ -67,4 +76,17 @@ footer {
     display: flex; 
     align-items: center;
     justify-content: space-between;
+}
+
+#tagline {
+    text-align: center;
+    grid-column: 2/11;
+}
+
+#project_1 {
+    grid-column: 1/4; 
+}
+
+#description_1 {
+    grid-column: 6/10; 
 }
